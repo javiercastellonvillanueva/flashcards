@@ -1,0 +1,61 @@
+Question,Answer
+What is the primary purpose of a Relational Database?,To establish well-defined relationships between tables.
+True or False: Metadata is considered end-user data within the context of a relational database.,FALSE
+Which of the following is NOT a purpose of Relational Databases?,Increase Data Redundancy
+Why is Database Management important?,It helps in making quick decisions.
+"True or False: Spreadsheets are prone to data redundancy because each row stands on its own, potentially duplicating data.",TRUE
+What problem do relational databases solve that spreadsheets suffer from?,Data redundancy and inconsistency
+True or False: A primary key is used to uniquely identify a row in a relational database table.,TRUE
+Which of the following is a key component of an Entity-Relationship Diagram (ERD)?,Entities
+What does a foreign key do?,It establishes a relationship between two tables
+True or False: Business rules are informal guidelines that need not be written down or communicated.,FALSE
+What is the first stage in developing a database?,Requirements Analysis
+"True or False: The mission statement of a database project outlines its main purpose, whom it serves, and what it aims to achieve.",TRUE
+"Which type of data model provides a high-level view of what data is to be stored, major entities, attributes, and relationships between them?",Conceptual Data Model
+True or False: Logical Design involves creating an Entity-Relationship (ER) diagram.,FALSE
+What is the role of a Data Dictionary in database development?,To serve as a centralized repository of information about data
+True or False: Multivalued attributes should be implemented directly in a relational DBMS.,FALSE
+Which of the following attributes can be divided into smaller subparts?,Composite attributes
+True or False: An attribute that holds multiple values for a particular entity is known as a single-valued attribute.,FALSE
+What is essential for a primary key?,It must contain unique values.
+True or False: A bridge table is required to implement many-to-many relationships in a relational database.,TRUE
+What is the main goal of normalization in database design?,To minimize data redundancies and ensure data integrity
+True or False: Normalization involves decomposing a table into two or more tables and defining relationships between them.,TRUE
+Which of the following is NOT a step in converting a table to the First Normal Form (1NF)?,Include derived attributes
+What condition must be met for a table to be in Second Normal Form (2NF)?,No partial dependencies on the primary key
+True or False: A table is in Third Normal Form (3NF) if it is in 2NF and contains no transitive dependencies.,TRUE
+"In the context of normalization, what is a transitive dependency?",When an attribute depends on another non-primary key attribute
+True or False: Normalization only applies to relational databases.,TRUE
+Which of the following best describes a partial dependency?,An attribute depending on part of a composite primary key
+True or False: Eliminating data anomalies is a primary concern of normalization.,TRUE
+What is the role of a primary key in the normalization process?,To uniquely identify each row in a table
+What is the primary goal of the Extended Entity Relationship (EER) model?,To enhance the traditional entity-relationship model with more complex concepts
+True or False: A specialization hierarchy organizes entities into supertypes and subtypes based on their relationships and attributes.,TRUE
+What does a subtype discriminator do in an EER model?,It determines to which subtype an entity instance belongs
+"True or False: In a specialization hierarchy, a subtype can have multiple direct supertypes.",FALSE
+What is the significance of completeness constraints in an EER model?,They specify whether every supertype occurrence must be a member of at least one subtype
+True or False,TRUE
+Which constraint ensures that an entity instance of a supertype must belong to at least one subtype?,Total completeness constraint
+True or False: Entity subtypes do not inherit attributes and relationships from their supertypes.,FALSE
+"In the context of EER models, what is the role of inheritance?",It allows entity subtypes to inherit attributes and relationships from their supertype
+True or False: Maintaining historical data in a relational database requires creating separate entities to track changes over time.,TRUE
+What is the primary function of SQL in database management?,To communicate with a relational database management system
+True or False: SQL Server Management Studio (SSMS) is used for managing a MySQL database.,FALSE
+Which SQL command is used to create a new table?,CREATE TABLE
+What does the `NOT NULL` constraint ensure?,That the column cannot have a NULL value
+True or False: The `PRIMARY KEY` constraint can ensure that a column (or a group of columns) contains unique values across the table.,TRUE
+The `FOREIGN KEY` constraint is used to:,Establish a relationship between two tables
+True or False: The `INSERT INTO` statement is used to add new rows to a table.,TRUE
+Which SQL command is used to remove a table and all its data from the database?,DROP TABLE
+The `UPDATE` statement is used for:,Modifying existing records in a table
+"True or False: The `DELETE FROM` statement is used to delete existing records from a table, and it can be restricted to specific records using the `WHERE` clause.",TRUE
+What is the purpose of the `SELECT` statement in SQL?,To query data from a database table
+True or False: The `DISTINCT` keyword is used to remove duplicate rows from a query result.,TRUE
+Which clause is used to sort the results of a query in SQL?,ORDER BY
+The `WHERE` clause is used for:,Filtering records that fulfill a specified condition
+True or False: The `HAVING` clause is used to filter rows after they have been grouped by the `GROUP BY` clause.,TRUE
+"Logical operators in SQL, such as `AND` and `OR`, are used to:",Combine multiple conditions in a `WHERE` clause
+Which aggregate function is used to calculate the total sum of a numeric column?,SUM()
+True or False: The `GROUP BY` clause is necessary when using an aggregate function like `SUM()` or `COUNT()` to group the output.,TRUE
+"To select records from a table where a particular column's value is unique, which SQL feature would you use?",DISTINCT keyword
+True or False: You can use the `ORDER BY` clause to sort query results in either ascending (ASC) or descending (DESC) order.,TRUE

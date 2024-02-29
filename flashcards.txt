@@ -1,0 +1,195 @@
+### Lecture 1: Introduction to Relational Database Modeling
+
+**Q:** What is the primary purpose of a Relational Database?
+**A:** To establish well-defined relationships between tables.
+
+**Q:** True or False: Metadata is considered end-user data within the context of a relational database.
+**A:** False
+
+**Q:** Which of the following is NOT a purpose of Relational Databases?
+**A:** Increase Data Redundancy
+
+**Q:** Why is Database Management important?
+**A:** It helps in making quick decisions.
+
+**Q:** True or False: Spreadsheets are prone to data redundancy because each row stands on its own, potentially duplicating data.
+**A:** True
+
+**Q:** What problem do relational databases solve that spreadsheets suffer from?
+**A:** Data redundancy and inconsistency
+
+**Q:** True or False: A primary key is used to uniquely identify a row in a relational database table.
+**A:** True
+
+**Q:** Which of the following is a key component of an Entity-Relationship Diagram (ERD)?
+**A:** Entities
+
+**Q:** What does a foreign key do?
+**A:** It establishes a relationship between two tables
+
+**Q:** True or False: Business rules are informal guidelines that need not be written down or communicated.
+**A:** False
+
+### Lecture 2: Developing Data Models for Business Databases
+
+**Q:** What is the first stage in developing a database?
+**A:** Requirements Analysis
+
+**Q:** True or False: The mission statement of a database project outlines its main purpose, whom it serves, and what it aims to achieve.
+**A:** True
+
+**Q:** Which type of data model provides a high-level view of what data is to be stored, major entities, attributes, and relationships between them?
+**A:** Conceptual Data Model
+
+**Q:** True or False: Logical Design involves creating an Entity-Relationship (ER) diagram.
+**A:** False
+
+**Q:** What is the role of a Data Dictionary in database development?
+**A:** To serve as a centralized repository of information about data
+
+**Q:** True or False: Multivalued attributes should be implemented directly in a relational DBMS.
+**A:** False
+
+**Q:** Which of the following attributes can be divided into smaller subparts?
+**A:** Composite attributes
+
+**Q:** True or False: An attribute that holds multiple values for a particular entity is known as a single-valued attribute.
+**A:** False
+
+**Q:** What is essential for a primary key?
+**A:** It must contain unique values.
+
+**Q:** True or False: A bridge table is required to implement many-to-many relationships in a relational database.
+**A:** True
+
+### Lecture 3: Normalization of Relational Tables
+
+**Q:** What is the main goal of normalization in database design?
+**A:** To minimize data redundancies and ensure data integrity
+
+**Q:** True or False: Normalization involves decomposing a table into two or more tables and defining relationships between them.
+**A:** True
+
+**Q:** Which of the following is NOT a step in converting a table to the First Normal Form (1NF)?
+**A:** Include derived attributes
+
+**Q:** What condition must be met for a table to be in Second Normal Form (2NF)?
+**A:** No partial dependencies on the primary key
+
+**Q:** True or False: A table is in Third Normal Form (3NF) if it is in 2NF and contains no transitive dependencies.
+**A:** True
+
+**Q:** In the context of normalization, what is a transitive dependency?
+**A:** When an attribute depends on another non-primary key attribute
+
+**Q:** True or False: Normalization only applies to relational databases.
+**A:** True
+
+**Q:** Which of the following best describes a partial dependency?
+**A:** An attribute depending on part of a composite primary key
+
+**Q:** True or False: Eliminating data anomalies is a primary concern of normalization.
+**A:** True
+
+**Q:** What is the role of a primary key in the normalization process?
+**A:** To uniquely identify each row in a table
+
+### Lecture 4: Extended Entity Relationship Model
+
+**Q:** What is the primary goal of the Extended Entity Relationship (EER) model?
+**A:** To enhance the traditional entity-relationship model with more complex concepts
+
+**Q:** True or False: A specialization hierarchy organizes entities into supertypes and subtypes based on their relationships and attributes.
+**A:** True
+
+**Q:** What does a subtype discriminator do in an EER model?
+**A:** It determines to which subtype an entity instance belongs
+
+**Q:** True or False: In a specialization hierarchy, a subtype can have multiple direct supertypes.
+**A:** False
+
+**Q:** What is the significance of completeness constraints in an EER model?
+**A:** They specify whether every supertype occurrence must be a member of at least one subtype
+
+**Q:** True or False
+
+: Overlapping subtypes allow an entity to be a member of more than one subtype at the same time.
+**A:** True
+
+**Q:** Which constraint ensures that an entity instance of a supertype must belong to at least one subtype?
+**A:** Total completeness constraint
+
+**Q:** True or False: Entity subtypes do not inherit attributes and relationships from their supertypes.
+**A:** False
+
+**Q:** In the context of EER models, what is the role of inheritance?
+**A:** It allows entity subtypes to inherit attributes and relationships from their supertype
+
+**Q:** True or False: Maintaining historical data in a relational database requires creating separate entities to track changes over time.
+**A:** True
+
+### Lecture 5: Creating Database Tables and Importing Data using SQL
+
+**Q:** What is the primary function of SQL in database management?
+**A:** To communicate with a relational database management system
+
+**Q:** True or False: SQL Server Management Studio (SSMS) is used for managing a MySQL database.
+**A:** False
+
+**Q:** Which SQL command is used to create a new table?
+**A:** CREATE TABLE
+
+**Q:** What does the `NOT NULL` constraint ensure?
+**A:** That the column cannot have a NULL value
+
+**Q:** True or False: The `PRIMARY KEY` constraint can ensure that a column (or a group of columns) contains unique values across the table.
+**A:** True
+
+**Q:** The `FOREIGN KEY` constraint is used to:
+**A:** Establish a relationship between two tables
+
+**Q:** True or False: The `INSERT INTO` statement is used to add new rows to a table.
+**A:** True
+
+**Q:** Which SQL command is used to remove a table and all its data from the database?
+**A:** DROP TABLE
+
+**Q:** The `UPDATE` statement is used for:
+**A:** Modifying existing records in a table
+
+**Q:** True or False: The `DELETE FROM` statement is used to delete existing records from a table, and it can be restricted to specific records using the `WHERE` clause.
+**A:** True
+
+### Lecture 6: An Introduction to SQL Queries: From Data to Information
+
+**Q:** What is the purpose of the `SELECT` statement in SQL?
+**A:** To query data from a database table
+
+**Q:** True or False: The `DISTINCT` keyword is used to remove duplicate rows from a query result.
+**A:** True
+
+**Q:** Which clause is used to sort the results of a query in SQL?
+**A:** ORDER BY
+
+**Q:** The `WHERE` clause is used for:
+**A:** Filtering records that fulfill a specified condition
+
+**Q:** True or False: The `HAVING` clause is used to filter rows after they have been grouped by the `GROUP BY` clause.
+**A:** True
+
+**Q:** Logical operators in SQL, such as `AND` and `OR`, are used to:
+**A:** Combine multiple conditions in a `WHERE` clause
+
+**Q:** Which aggregate function is used to calculate the total sum of a numeric column?
+**A:** SUM()
+
+**Q:** True or False: The `GROUP BY` clause is necessary when using an aggregate function like `SUM()` or `COUNT()` to group the output.
+**A:** True
+
+**Q:** To select records from a table where a particular column's value is unique, which SQL feature would you use?
+**A:** DISTINCT keyword
+
+**Q:** True or False: You can use the `ORDER BY` clause to sort query results in either ascending (ASC) or descending (DESC) order.
+**A:** True
+
+These flashcards are designed to facilitate learning and review of the key concepts discussed across the six lectures.
